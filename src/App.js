@@ -127,11 +127,11 @@ const App = () => {
                 </div>
             </header>
             <main className="app-main">
-                {isLoadingMore && <div className="spinner"></div>}
+                {(isLoadingMore || isChartLoading) && <div className="spinner"></div>}
                 {error ? (
                     <p className="error-message">{error}</p>
                 ) : selectedCompany && companyData.length > 0 ? (
-                    <LineChart data={companyData} isLoading={isChartLoading}/>
+                    <LineChart data={companyData}/>
                 ) : (
                     <p>Please select a company from the dropdown.</p>
                 )}

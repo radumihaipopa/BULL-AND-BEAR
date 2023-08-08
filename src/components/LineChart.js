@@ -4,7 +4,7 @@ import { Line } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import 'chartjs-adapter-moment';
 
-const LineChart = ({ data , isLoading}) => {
+const LineChart = ({ data }) => {
     const dates = data.map((item) => item[0]);
     const stopPrices = data.map((item) => item[4]);
 
@@ -51,7 +51,6 @@ const LineChart = ({ data , isLoading}) => {
 
     return (
         <div className="chart-container">
-            {isLoading && <div className="spinner"></div>}
             <Line data={chartData} options={options} />
         </div>
 )};
