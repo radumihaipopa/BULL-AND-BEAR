@@ -1,0 +1,14 @@
+/* CompanySelector.css */
+
+.company-selector-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-selector {
+    margin-left: 10px;
+    font-family: BreezeSans, sans-serif;
+    font-size: 13px;
+    width: 500px;
+
+}

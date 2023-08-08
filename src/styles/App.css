@@ -1,0 +1,71 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  font-family: BreezeSans, sans-serif;
+  overflow: hidden;
+}
+
+.app-title {
+  color: transparent;
+  text-shadow: 0 0 0 rgba(75,192,192,1);
+}
+
+.app-title:hover {
+  color: rgba(75,192,192,1);
+}
+
+.app-header {
+  display: flex;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+}
+
+.error-message {
+  color: red;
+}
+
+.app-footer {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.load-more p {
+  margin: 0;
+}
+
+.button {
+  font-family: BreezeSans, sans-serif;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+button:hover {
+  background: rgba(75,192,192,1);
+  border: 1px solid rgba(75,192,192,0.8);
+}

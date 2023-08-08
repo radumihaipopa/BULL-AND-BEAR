@@ -1,0 +1,8 @@
+{
+  "short_name": "BULL&BEAR",
+  "name": "Stock exchange visualization",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
